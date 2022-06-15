@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking  title</title>
+</head>
+<style>
+    body{
+        width: 70%;
+        margin: auto;
+    }
+    #breakingtitle{
+        display: flex;
+        /* justify-content: space-between; */
+       
+        /* align-items: center; */
+      padding: -10px;
+    }
+    #title{
+      
+        background-color: red;
+        color: white;
+        padding: 10px;
+        font-weight: bolder;
+    }
+    
+   #increase{
+    font-size: xx-large;
+    font-weight: bolder;
+        background-color: white;
+        color: red;
+        /* padding: 10px; */
+       border: none;
+      
+       /* box-sizing: border-box; */
+       display: relative;
+       
+       
+    }
+    /* #pause{
+        font-size: xx-large;
+        font-weight: bolder;
+        background-color: white;
+        color: red;
+        border: none;
+    } */
+   #decrease{
+    font-size: xx-large;
+    font-weight: bolder;
+        background-color: white;
+        color: red;
+        /* padding: 10px; */
+       border: none;
+      
+       /* box-sizing: border-box; */
+       display: relative;
+      
+    }
+    #breakingnews{
+        width: 85%;
+        display: flex;
+        border: 1px solid red;
+        font-weight: bold;
+        /* box-sizing: border-box; */
+        
+        justify-content: space-between;
+    }
+    #content{
+        /* position: relative; */
+        width: 85%;
+        margin-left: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<body>
+    <div id="breakingtitle">
+        <span id="title">MUST READ</span>
+        <span id="breakingnews">
+            <div id="content" >LIMITED PERIOD OFFER| GET THE INDIAN EXPRESS DIGITAL PREMIUM NOW WITH AD-LITE</div>
+            <button id="increase"><</button>
+           
+            <button id="decrease">></button>
+        </span>
+        
+    </div>
+</body>
+</html>
+<script>
+    let arr=["Sharad Pawar as a President Condidate? Amid oppn chorus,the Unathused Stalwart","Ezplained The Agnipath Scheme For a Recuiting Solider-- What is it how will it work?","Congress protest: Police Attacked kc Venugopal; broke Chidamram's  rib alleges Surjewala"];
+    let cdata=document.querySelector("#content");
+    let increment=document.querySelector("#increase");
+    increment.addEventListener("click",increase);
+    let decrement=document.querySelector("#decrease");
+    decrement.addEventListener("click",decrease); 
+function increase(){
+    for(let i=0;i<arr.length;i++){
+        if(i==arr.length-1){
+            cdata.innerText=arr[0]; 
+        }else{
+            cdata.innerText=arr[i];  
+        }
+}
+ }
+ function decrease(){
+   
+    for(let i=arr.length-1;i>=0;i--){
+        // console.log(arr[i]);
+        if(i==0){
+            cdata.innerText=arr[arr.length-1]; 
+        }
+        if(i!=0){
+            cdata.innerText=arr[i]; 
+            console.log(arr[i]); 
+        }
+}
+ }
+      
+    
+</script>
