@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscribe Payment</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(252, 247, 247);
+      }
+      body > img {
+        width: 11%;
+        display: block;
+        margin: auto;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .payment {
+        width: 40%;
+        margin: auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-top: 60px;
+        height: 80vh;
+      }
+      .payment > div > img {
+        width: 80%;
+        display: block;
+        margin: auto;
+      }
+      h1 {
+        text-align: center;
+        color: lightcoral;
+        padding-top: 20px;
+      }
+      input {
+        width: 85%;
+        display: block;
+        margin: auto;
+        font-size: 18px;
+        margin-bottom: 20px;
+        opacity: 50%;
+        padding: 10px;
+      }
+      label {
+        width: 85%;
+        display: block;
+        margin: auto;
+        font-size: 22px;
+      }
+      p {
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bolder;
+        font-size: 20px;
+      }
+      #submit {
+        background-color: teal;
+        opacity: 80%;
+        color: white;
+        border: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://indianexpress.com/wp-content/themes/indianexpress/images/evolok/indian-express-logo-n.svg"
+      alt=""
+    />
+    <hr />
+    <div class="payment">
+      <h1>Pay Invoice</h1>
+      <div>
+        <img
+          src="https://www.freepnglogos.com/uploads/visa-and-mastercard-logo-26.png"
+          alt=""
+        />
+      </div>
+      <form action="">
+        <p>Payment Amount</p>
+        <p>$ 87.00</p>
+        <label for="">Name on the Card</label>
+        <input
+          type="text"
+          name=""
+          id="name"
+          placeholder="Enter Your Full Name"
+        />
+        <label for="">Card Number</label>
+        <input
+          type="tel"
+          id="card"
+          placeholder="Enter your card number"
+          maxlength="13"
+        />
+        <label for="">Expiry date</label>
+        <input type="date" name="" id="date" />
+        <label for="">CVV</label>
+        <input
+          type="password"
+          name=""
+          id="cvv"
+          placeholder="Enter 3 digits CVV"
+          maxlength="3"
+        />
+        <input type="submit" value="Pay $87.00" id="submit" />
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", myFunc);
+
+  function myFunc() {
+    event.preventDefault();
+    let cardNum = document.querySelector("#card").value;
+    let datee = document.querySelector("#date").value;
+    let cvv = document.querySelector("#cvv").value;
+
+    if (cardNum == 1234 && datee == "2022-06-01" && cvv == 555) {
+      alert("Please enter OTP");
+      window.location.href = "OTP.html";
+    } else {
+      alert("wrong credentials");
+    }
+  }
+</script>
