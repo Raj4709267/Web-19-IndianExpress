@@ -14,7 +14,7 @@ function login(event){
     }else if(form.pword.value != nusers[0].password){
       alert("Password is invalid.")
     }else{
-      location.replace("../premium/premium.html")
+      location.replace("../index.html")
     }
   }
   

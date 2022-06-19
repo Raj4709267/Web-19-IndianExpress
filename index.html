@@ -266,63 +266,71 @@
     }
     /* breaking news styling */
     #breakingtitle{
-        display: flex;
-        /* justify-content: space-between; */
-       
-        /* align-items: center; */
-      padding: -10px;
-      width:fit-content;
-      
-    }
-    #title{
-         width: 10%;
-        background-color: red;
-        color: white;
-        padding: 10px;
-        font-weight: bolder;
-    }
-    
-   #increase{
-    font-size: xx-large;
-    font-weight: bolder;
-        color: red;
-        /* padding: 10px; */
-       border: none;
-      
-       /* box-sizing: border-box; */
-       display: relative;
-       
-       
-    }
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  /* justify-content: space-between; */
+ 
+  /* align-items: center; */
+padding: -10px;
+}
+#title{
+
+  background-color: red;
+  color: white;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+#increase{
+font-size: xx-large;
+font-weight: bolder;
+  background-color: white;
+  color: red;
+  /* padding: 10px; */
+ border: none;
+
+ /* box-sizing: border-box; */
+ display: relative;
+ 
+ 
+}
+/* #pause{
+  font-size: xx-large;
+  font-weight: bolder;
+  background-color: white;
+  color: red;
+  border: none;
+} */
+#decrease{
+font-size: xx-large;
+font-weight: bolder;
+  background-color: white;
+  color: red;
+  /* padding: 10px; */
+ border: none;
+
+ /* box-sizing: border-box; */
+ display: relative;
+
+}
+#breakingnews{
+  width: 85%;
+  display: flex;
+  border: 1px solid red;
+  font-weight: bold;
+  /* box-sizing: border-box; */
   
-   #decrease{
-    font-size: xx-large;
-    font-weight: bolder;
-        color: red;
-        /* padding: 10px; */
-       border: none;
-      
-       /* box-sizing: border-box; */
-       display: relative;
-      
-    }
-    #breakingnews{
-       width:100%;
-        display: flex;
-        border: 1px solid red;
-        font-weight: bold;
-        box-sizing: border-box;
-       
-        justify-content: space-between;
-    }
-    #content{
-        /* position: relative; */
-        width: 85%;
-        margin-left: 5%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  justify-content: space-between;
+}
+#content{
+  /* position: relative; */
+  width: 85%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
     /* breaking news styling end */
     /* @media all (min-width:320px)and(max-width:1020px){
         #body{
@@ -348,8 +356,8 @@
       /* width: 100%; */
        /* width: 465px;
        height: 265px; */
-       padding: 0px 10px 0px 0px;
-    }
+       /* padding: 0px 10px 0px 0px;
+    } */
     .text{
         /* text-align: justify; */
         font-family: Verdana, Geneva, Tahoma, sans-serif
@@ -477,7 +485,7 @@
         grid-template-columns: repeat(2,1fr);
         gap: 10px;
     }
-    }
+    
     */
 </style>
 <body>
@@ -827,12 +835,12 @@
     <div class="left4">
         <div style="display:flex; justify-content: space-between; width: 100%;"><div><a href="https://indianexpress.com/section/sports/"><h2>SPORTS<span style="color: red;">></span></h2></a></div>
          <div style="display:flex;justify-content:safe; margin:auto 10px auto ;">
-            <a style="" href="https://indianexpress.com/section/sports/ipl/">IPL 2022 |</a>
-            <a style="" href="https://indianexpress.com/section/sports/cricket">Criket|</a>
-            <a style="" href="https://indianexpress.com/section/sports/football/">Football |</a>
-            <a style="" href="https://indianexpress.com/section/sports/tennis/">Tennis |</a>
-            <a style="" href="https://indianexpress.com/section/sports/wwe-wrestling/">WWE |</a>
-            <a style="" href="https://indianexpress.com/picture-gallery-section/sports-gallery/">PHOTO </a>
+            <a href="https://indianexpress.com/section/sports/ipl/">IPL 2022 |</a>
+            <a href="https://indianexpress.com/section/sports/cricket">Criket|</a>
+            <a href="https://indianexpress.com/section/sports/football/">Football |</a>
+            <a href="https://indianexpress.com/section/sports/tennis/">Tennis |</a>
+            <a href="https://indianexpress.com/section/sports/wwe-wrestling/">WWE |</a>
+            <a href="https://indianexpress.com/picture-gallery-section/sports-gallery/">PHOTO </a>
          </div> </div>
        
         
@@ -1481,7 +1489,7 @@
 
         }];
         let timeslide=document.querySelector(".sdown");
-     setInterval(function(){increment.click();},5000);
+     setInterval(function(){increment.click();},1000);
         let start=0;
     let end=arr.length-1;
 

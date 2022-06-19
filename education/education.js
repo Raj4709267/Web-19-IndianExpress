@@ -40,19 +40,20 @@ let increment = document.querySelector(".increase");
 
   // ***************************************
   // search css
-function openSearch(event) {
-  event.preventDefault()
-document.getElementById("myOverlay").style.display = "block";
+  function openSearch() {
+    event.preventDefault()
+  document.getElementById("myOverlay").style.display = "block";
 }
 
 function closeSearch() {
-document.getElementById("myOverlay").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
 }
+
 
 // search function
 document.querySelector("#form").addEventListener("submit",searching);
 
-function searching(event){
+function searching(){
     event.preventDefault();
     let text=document.querySelector("#form>input").value
     document.getElementById("myOverlay").style.display = "none";
