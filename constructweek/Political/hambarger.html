@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Roboto, sans-serif;
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        hr{
+            width:70%;
+            margin:auto
+        }
+
+        .container {
+            width: 70%;
+            margin: auto;
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .container>div {
+            line-height: 30px;
+            width: 20%;
+        }
+        div>p:first-child{
+            font-weight: bold;
+        }
+        div>p>a:hover,strong:hover{
+            color: red;
+            text-decoration: underline;
+         }
+
+         #back{
+            width: 50px;
+            margin-left: 20px;
+            position: fixed;
+         }
+         #back>button{
+            border: none;
+            font-size: 30px;
+            background: none;
+            color: rgb(130, 130, 130);
+         }
+        
+
+         #one{
+            margin-top: 50px;
+         }
+         
+    </style>
+</head>
+
+<body>
+    <div id="back">
+        <button onclick="history.back()">X</button>
+    </div>
+    
+    <div class="container" id="one">
+        <div>
+            <p><a href="" target="_blank">Home</a></p>
+            <p><a href="https://indianexpress.com/section/world/" target="_blank"><strong>World</strong></a></p>
+            <p><a href="https://indianexpress.com/section/india/" target="_blank"><strong>India</strong></a></p>
+            <p><a href="https://indianexpress.com/section/north-east-india/" target="_blank"><strong>North East India</strong></a></p>
+            <p><a href="https://indianexpress.com/section/north-east-india/arunachal-pradesh/" target="_blank">Arunachal Pradesh</a></p>
+            <p><a href="https://indianexpress.com/section/north-east-india/assam/" target="_blank">Assam</a></p>
+            <p><a href="https://indianexpress.com/section/north-east-india/manipur/" target="_blank">Manipur</a></p>
+            <p><a href="https://indianexpress.com/section/north-east-india/meghalaya/" target="_blank">Meghalaya</a></p>
+            <p><a href="https://indianexpress.com/section/north-east-india/mizoram/" target="_blank">Mizoram</a></p>
+            <p><a href="https://indianexpress.com/section/north-east-india/nagaland/" target="_blank">Nagaland</a></p>
+            <p><a href="https://indianexpress.com/section/north-east-india/tripura/" target="_blank">Tripura</a></p>
+        </div>
+        <div>
+            <p><a href="https://indianexpress.com/photos/" target="_blank">Photos</a></p>
+            <p><a href="https://indianexpress.com/photos/entertainment-gallery/" target="_blank">Entertainment</a></p>
+            <p><a href="https://indianexpress.com/photos/sports-gallery/" target="_blank">Sports</a></p>
+            <p><a href="https://indianexpress.com/photos/india-news/" target="_blank">News</a></p>
+            <p><a href="https://indianexpress.com/photos/lifestyle-gallery/" target="_blank">Lifestyle</a></p>
+            <p><a href="https://indianexpress.com/photos/trending-gallery/" target="_blank">Viral</a></p>
+            <p><a href="https://indianexpress.com/photos/technology-gallery/" target="_blank">Technology</a></p>
+            <p><a href="https://indianexpress.com/photos/photo-archives/" target="_blank">Archives</a></p>
+        </div>
+        <div>
+            <p><a href="https://indianexpress.com/videos/" target="_blank">Videos</a></p>
+            <p><a href="https://indianexpress.com/videos/explained-video/" target="_blank">Explained</a></p>
+            <p><a href="https://indianexpress.com/videos/tech-video/" target="_blank">Technology</a></p>
+            <p><a href="https://indianexpress.com/videos/entertainment-video/" target="_blank">Entertainment</a></p>
+            <p><a href="https://indianexpress.com/videos/lifestyle-video/" target="_blank">Lifestyle</a></p>
+            <p><a href="https://indianexpress.com/videos/food-video/" target="_blank">Food</a></p>
+            <p><a href="https://indianexpress.com/videos/sports-video/" target="_blank">Sports</a></p>
+            <p><a href="https://indianexpress.com/videos/auto-video/" target="_blank">Auto</a></p>
+            <p><a href="https://indianexpress.com/videos/idea-exchange-video/" target="_blank">Idea Exchange</a></p>
+            <p><a href="https://indianexpress.com/videos/news-video/" target="_blank">News</a></p>
+        </div>
+        <div>
+            <p> <a href="https://indianexpress.com/audio/" target="_blank">Audio</a></p>
+            <p><a href="https://indianexpress.com/audio/3-things/" target="_blank">3 Things</a></p>
+            <p><a href="https://indianexpress.com/audio/express-sports/" target="_blank">Express Sports</a></p>
+            <p><a href="https://indianexpress.com/audio/water-an-indian-express-series/" target="_blank">Water</a></p>
+            <p><a href="https://indianexpress.com/audio/likh-the-process/" target="_blank">Likh: The Process</a></p>
+            <p><a href="https://indianexpress.com/audio/metro-food-hoppers/" target="_blank">Metro Food Hoppers</a></p>
+            <p><a href="https://indianexpress.com/audio/the-sandip-roy-show/" target="_blank">The Sandip Roy Show</a></p>
+            <p><a href="https://indianexpress.com/audio/talking-books/" target="_blank">Talking Books</a></p>
+            <p><a href="https://indianexpress.com/audio/what-to-watch-this-weekend/" target="_blank">What to Watch this Weekend</a></p>
+        </div>
+        <div>
+            <p><a href="">From the Prin</a></p>
+            <p><a href="https://indianexpress.com/section/opinion/" target="_blank">Opinion</a></p>
+            <p><a href="https://indianexpress.com/section/explained/" target="_blank">Explained</a></p>
+            <p><a href="https://indianexpress.com/section/explained/" target="_blank">Delhi Confidential</a></p>
+            <p><a href="https://indianexpress.com/section/explained/" target="_blank">Astrology</a></p>
+            <p><a href="https://indianexpress.com/section/explained/" target="_blank">Epaper</a></p>
+            <p><a href="https://indianexpress.com/section/explained/" target="_blank">Todays Paper</a></p>
+            <p><a href="https://indianexpress.com/section/express-sunday-eye/" target="_blank">Sunday Eye</a></p>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div>
+            <p><a href="https://indianexpress.com/section/entertainment/" target="_blank">Entertainment</a></p>
+            <p><a href="https://indianexpress.com/section/entertainment/bollywood/" target="_blank">Bollywood</a></p>
+            <p><a href="https://indianexpress.com/section/entertainment/hollywood/" target="_blank">Hollywood</a></p>
+            <p><a href="https://indianexpress.com/section/entertainment/television/" target="_blank">Television</a></p>
+            <p><a href="https://indianexpress.com/section/entertainment/music/" target="_blank">Music</a></p>
+            <p><a href="https://indianexpress.com/section/entertainment/movie-review/" target="_blank">Reviews</a></p>
+            <p><a href="https://indianexpress.com/section/entertainment/movie-review/" target="_blank">Regional</a></p>
+            <p><a href="https://indianexpress.com/section/entertainment/tamil/" target="_blank">Tamil</a></p>
+            <p><a href="https://indianexpress.com/section/entertainment/telugu/" target="_blank">Telugu</a></p>
+            <p><a href="https://indianexpress.com/section/entertainment/malayalam/" target="_blank">Malayalam</a></p>
+            <p><a href="/section/entertainment/bollywood/box-office-collection/" target="_blank">BoxOffice</a></p>
+            <p><a href="https://indianexpress.com/section/entertainment/web-series/" target="_blank">Web Series</a></p>
+        </div>
+        <div>
+            <p><a href="">Featured</a></p>
+            <p><a href="https://indianexpress.com/section/what-is/" target="_blank">What Is</a></p>
+            <p><a href="https://indianexpress.com/section/who-is/" target="_blank">Who Is</a></p>
+            <p><a href="https://indianexpress.com/section/when-is/" target="_blank">When Is</a></p>
+            <p><a href="https://indianexpress.com/section/how-to/" target="_blank">How to</a></p>
+            <p><a href="https://indianexpress.com/section/research/" target="_blank">Research</a></p>
+            <p><a href="https://indianexpress.com/section/gender/" target="_blank">GenderAnd</a></p>
+
+        </div>
+        <div>
+            <p><a href="https://indianexpress.com/section/sports/" target="_blank">Sports</a></p>
+            <p><a href="https://indianexpress.com/olympics/" target="_blank">Olympics</a></p>
+            <p><a href="https://indianexpress.com/about/t20-world-cup/" target="_blank">T20 WC</a></p>
+            <p><a href="https://indianexpress.com/section/sports/badminton/" target="_blank">Badminton</a></p>
+            <p><a href="https://indianexpress.com/section/sports/cricket/" target="_blank">Cricket</a></p>
+            <p><a href="https://indianexpress.com/section/sports/football/" target="_blank">Football</a></p>
+            <p><a href="https://indianexpress.com/section/fifa/" target="_blank">FIFA 2018</a></p>
+            <p><a href="https://indianexpress.com/section/sports/hockey/" target="_blank">Hockey</a></p>
+            <p><a href="https://indianexpress.com/section/sports/motor-sport/" target="_blank">Motor Sport</a></p>
+            <p><a href="https://indianexpress.com/section/sports/tennis/" target="_blank">Tennis</a></p>
+            <p><a href="https://indianexpress.com/section/sports/wwe-wrestling/" target="_blank">WWE Wrestling</a></p>
+            
+        </div>
+        <div>
+            <p><a href="https://indianexpress.com/section/technology/" target="_blank">Tech</a></p>
+            <p><a href="https://indianexpress.com/section/technology/" target="_blank">Technology</a></p>
+            <p><a href="https://indianexpress.com/section/mobile-tabs/" target="_blank">Mobile &amp; Tabs</a></p>
+            <p><a href="https://indianexpress.com/section/gadgets/" target="_blank">Gadgets</a></p>
+            <p><a href="https://indianexpress.com/section/science/" target="_blank">Science</a></p>
+            <p><a href="https://indianexpress.com/section/tech-reviews/" target="_blank">Tech Reviews</a></p>
+            <p><a href="https://indianexpress.com/section/social/" target="_blank">Social</a></p>
+            <p><a href="https://indianexpress.com/section/tech-news-technology/" target="_blank">Tech News</a></p>
+
+        </div>
+        <div>
+            <p><a href="https://indianexpress.com/section/lifestyle/" target="_blank">Lifestyle</a></p>
+            <p><a href="https://indianexpress.com/section/lifestyle/books/" target="_blank">Books</a></p>
+            <p><a href="https://indianexpress.com/section/lifestyle/fashion/" target="_blank">Fashion</a></p>
+            <p><a href="https://indianexpress.com/section/lifestyle/food-wine/" target="_blank">Food Wine</a></p>
+            <p><a href="https://indianexpress.com/section/lifestyle/health/" target="_blank">Health</a></p>
+            <p><a href="https://indianexpress.com/section/lifestyle/fitness/" target="_blank">Fitness</a></p>
+            <p><a href="https://indianexpress.com/section/lifestyle/art-and-culture/" target="_blank">Art &amp; Culture</a></p>
+            <p><a href="https://indianexpress.com/section/lifestyle/workplace/" target="_blank">Workplace</a></p>
+            <p><a href="https://indianexpress.com/section/auto-travel/" target="_blank">Auto &amp; Travel</a></p>
+ 
+        </div>
+
+    </div>
+
+<hr>
+    <div class="container">
+        <div>
+            <p><a href="https://indianexpress.com/section/trending/" target="_blank">Trending</a> </p>
+            <p><a href="https://indianexpress.com/section/trending/trending-in-india/" target="_blank">Trending In India</a> </p>
+            <p><a href="https://indianexpress.com/section/trending/trending-globally/" target="_blank">Trending Globally</a></p>
+            <p><a href="https://indianexpress.com/section/trending/viral-videos-trending/" target="_blank">Viral Videos</a></p>
+            <p><a href="https://indianexpress.com/section/trending/bizarre/" target="_blank">Bizarre</a></p>
+            <p><a href="https://indianexpress.com/section/trending/voice/" target="_blank">Voice</a></p>
+            <p><a href="https://indianexpress.com/parenting/" target="_blank"><strong>Parenting</strong></a></p>
+            <p><a href="https://indianexpress.com/parenting/nutrition/" target="_blank">Food</a></p>
+            <p><a href="https://indianexpress.com/parenting/health-fitness/" target="_blank">Health &amp; Fitness</a></p>
+            <p><a href="https://indianexpress.com/parenting/learning/" target="_blank">Learning</a></p>
+            <p><a href="https://indianexpress.com/parenting/family/" target="_blank">Family</a></p>
+            <p><a href="https://indianexpress.com/parenting/blog/" target="_blank">Blogs</a></p>
+            <p><a href="https://indianexpress.com/parenting/events-things-to-do/" target="_blank">Things To Do</a></p>
+        
+        </div>
+        <div>
+            <p><a href="https://indianexpress.com/section/cities/" target="_blank">Cities News</a></p>
+            <p><a href="https://indianexpress.com/section/cities/ahmedabad/" target="_blank">Ahmedabad</a></p>
+            <p><a href="https://indianexpress.com/section/cities/bangalore/" target="_blank">Bangalore</a></p>
+            <p><a href="https://indianexpress.com/section/cities/chandigarh/" target="_blank">Chandigarh</a></p>
+            <p><a href="https://indianexpress.com/section/cities/chennai/" target="_blank">Chennai</a></p>
+            <p><a href="https://indianexpress.com/section/cities/delhi/" target="_blank">Delhi</a></p>
+            <p><a href="https://indianexpress.com/section/cities/jaipur/" target="_blank">Jaipur</a></p>
+            <p><a href="https://indianexpress.com/section/cities/kolkata/" target="_blank">Kolkata</a></p>
+            <p><a href="https://indianexpress.com/section/cities/lucknow/" target="_blank">Lucknow</a></p>
+            <p><a href="https://indianexpress.com/section/cities/ludhiana/" target="_blank">Ludhiana</a></p>
+            <p><a href="https://indianexpress.com/section/cities/mumbai/" target="_blank">Mumbai</a></p>
+            <p><a href="https://indianexpress.com/section/cities/pune/" target="_blank">Pune</a></p>
+            
+        </div>
+        <div>
+            <p><a href="https://indianexpress.com/section/jobs/" target="_blank">Jobs</a> </p>
+            <p><a href="https://indianexpress.com/section/jobs/bank-jobs/" target="_blank">Bank Jobs</a></p>
+            <p><a href="https://indianexpress.com/section/jobs/defence-jobs/" target="_blank">Defence Jobs</a></p>
+            <p><a href="https://indianexpress.com/section/jobs/psu-jobs/" target="_blank">PSU</a></p>
+            <p><a href="https://indianexpress.com/section/jobs/railway-jobs/" target="_blank">Railway</a></p>
+            <p><a href="https://indianexpress.com/section/jobs/civil-services-ias-upsc-jobs/" target="_blank">UPSC</a></p>
+            <p><a href="https://indianexpress.com/section/jobs/teachers-jobs/" target="_blank">Teachers Job</a></p>
+            <p><a href="https://indianexpress.com/section/jobs/staff-selection-commission-ssc/" target="_blank">SSC</a></p>
+           
+        </div>
+        <div>
+            <p><a href="https://indianexpress.com/section/business/" target="_blank">Business</a></p>
+            <p><a href="https://indianexpress.com/section/business/aviation/" target="_blank">Aviation</a></p>
+            <p><a href="https://indianexpress.com/section/business/banking-and-finance/" target="_blank">Banking &amp; finance</a></p>
+            <p><a href="https://indianexpress.com/section/business/budget/" target="_blank">Budget</a></p>
+            <p><a href="https://indianexpress.com/section/business/business-others/" target="_blank">Business Other</a></p>
+            <p><a href="https://indianexpress.com/section/business/companies/" target="_blank">Companies</a></p>
+            <p><a href="https://indianexpress.com/section/business/economy/" target="_blank">Economy</a></p>
+            <p><a href="https://indianexpress.com/section/business/market/" target="_blank">Market</a></p>
+        </div>
+        <div>
+            <p><a href="https://indianexpress.com/section/education/" target="_blank">Education</a></p>
+            <p><a href="https://indianexpress.com/section/education/students-voice/" target="_blank">Students Voice</a></p>
+            <p><a href="https://indianexpress.com/section/education/study-abroad/" target="_blank">Study Abroad</a></p>
+            <p><a href="https://indianexpress.com/elections/" target="_blank">Elections</a></p>
+            <p><a href="https://indianexpress.com/brand-solutions/" target="_blank">Brand Solutions</a></p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

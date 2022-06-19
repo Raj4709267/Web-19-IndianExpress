@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enter OTP</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: lavender;
+      }
+      body > img {
+        width: 11%;
+        display: block;
+        margin: auto;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      input {
+        padding: 5px;
+        border-radius: 5px;
+      }
+      form,
+      h1 {
+        text-align: center;
+      }
+      h1 {
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      src="https://indianexpress.com/wp-content/themes/indianexpress/images/evolok/indian-express-logo-n.svg"
+      alt=""
+    />
+    <hr />
+    <h1>Enter OTP Here</h1>
+    <form action="">
+      <input type="number" name="" placeholder="ENTER OTP" id="otp" />
+      <input type="submit" value="Confirm OTP" />
+    </form>
+  </body>
+</html>
+
+<script>
+  document.querySelector("form").addEventListener("submit", myFun);
+
+  function myFun() {
+    event.preventDefault();
+    let OPT = document.querySelector("#otp").value;
+    if (OPT == 1234) {
+      alert("Payment successfull");
+      window.location.href = "/explained.html";
+    } else {
+      alert("Incorrect OTP");
+    }
+  }
+</script>

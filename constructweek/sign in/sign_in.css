@@ -1,0 +1,112 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: lightslategray;
+}
+#topbar{
+  display: flex;
+  border-bottom: 1px solid lightslategray;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#topbar>a{
+  width: 20%;
+  font-size: small;
+  text-decoration: none;
+  color: lightslategray;
+}
+#topbar>div{
+  width: 90%;
+}
+#topbar>div>img{
+  width: 20%;
+  padding-right: 230px;
+}
+
+#form{
+  border: 3px solid rgb(218, 219, 221);
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  border-radius: 10px;
+  margin: 50px auto;
+  padding-bottom: 15px;
+}
+#form>h2{
+  color: black;
+}
+
+.dlog{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  border: 1px solid rgb(208, 211, 214);
+  margin-left: 10%;
+  gap: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+
+}
+.dlog>div>img{
+  width: 20px;
+  border-radius: 100%;
+}
+.dlog>p{
+  margin: 10px;
+}
+
+#seperator{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+#seperator>.sep{
+  width: 45%;
+  background-color: grey;
+  height: 2px;
+}
+
+#form>p:nth-child(6){
+  width: 80%;
+  margin: auto;
+  font-size: 90%;
+  margin-bottom: 20px;
+}
+
+#form>div:nth-child(7){
+  display: grid;
+  width: 80%;
+  margin: auto;
+  gap: 20px;
+}
+
+#email,#pword{
+  border: none;
+  border-bottom: 1px solid rgb(7, 176, 176);
+  padding: 10px;
+}
+#form>div:nth-child(7)>input:nth-child(3){
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 0px;
+  border: 1px solid blue;
+  color: blue;
+  font-size: large;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#form>p:nth-child(8){
+  margin-bottom: 5px;
+}
+#form>a:nth-child(9){
+  color: blue;
+  font-weight: bold;
+  font-size: 90%;
+  text-decoration: none;
+}

@@ -1,0 +1,354 @@
+
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body > img {
+        width: 11%;
+        display: block;
+        margin: auto;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      #container {
+        width: 45%;
+        margin: auto;
+        height: 500px;
+        margin-top: 50px;
+      }
+      #container > div > h1 {
+        font-size: 42px;
+        line-height: 42px;
+        text-align: center;
+        font-weight: 700;
+        font-family: "Noto Serif", sans-serif;
+      }
+      #container > div > p {
+        text-align: center;
+        line-height: 30px;
+      }
+      #gridpart1 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(auto);
+        gap: 40px;
+        margin-top: 50px;
+      }
+      #gridpart1 > div {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        text-align: center;
+        border-radius: 10px;
+      }
+      #gridpart1 > div:hover {
+        cursor: pointer;
+        border: 2px solid blue;
+      }
+      #gridpart1 > div > h3 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 35px;
+      }
+      #gridpart1 > div > p {
+        font-size: 14px;
+        line-height: 20px;
+        width: 83%;
+        margin: auto;
+        margin-top: 15px;
+      }
+      .middlehr {
+        width: 65%;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+      .boldp {
+        line-height: 20px;
+        font-family: Arial;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      .month {
+        color: #9b7990;
+        font-size: 14px;
+        line-height: 20px;
+      }
+      #gridpart1 > div > button {
+        width: 83%;
+        margin: auto;
+        margin-top: 20px;
+        background-color: #3967d6;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        color: white;
+        padding: 7px;
+        margin-bottom: 30px;
+      }
+      .middlepart {
+        position: relative;
+      }
+      .positionabsolute {
+        position: absolute;
+        top: -10px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        background: #fe1313;
+        width: 127px;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 18px;
+      }
+      #middlepartbackground {
+        width: 100%;
+        background: #09112d;
+        height: 440px;
+        color: white;
+        border: 1px solid transparent;
+      }
+      #middlepartbackground > h3 {
+        text-align: center;
+        margin-top: 40px;
+        line-height: 30px;
+        font-size: 26px;
+        font-weight: 700;
+      }
+      #middlepartbackground > p {
+        text-align: center;
+        margin-top: 5px;
+        line-height: 30px;
+      }
+      .containermiddle {
+        display: grid;
+        width: 55%;
+        margin: auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(auto);
+        gap: 40px;
+        margin-top: 40px;
+      }
+      .containermiddle > div > img {
+        display: block;
+        margin: auto;
+      }
+      .containermiddle > div > p {
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+        width: 100%;
+        margin-top: 20px;
+      }
+      #belowmiddle {
+        width: 55%;
+        height: 600px;
+        margin: auto;
+        /* border: 1px solid rebeccapurple; */
+      }
+      .smallpart > h3 {
+        line-height: 30px;
+        font-size: 26px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+      .flexgivng {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        border: 1px solid #dee2e5;
+        padding: 30px;
+        border-radius: 10px;
+      }
+      .flexgivng > p {
+        margin-right: 7%;
+      }
+      .new {
+        line-height: 1;
+        font-family: Arial;
+        list-style: none;
+        margin: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        outline: 0;
+        box-sizing: border-box;
+        color: #000;
+        text-decoration: none;
+        display: inline-block;
+        background: url(/wp-content/themes/indianexpress/images/evolok/Contact.svg)
+          no-repeat left top;
+        padding: 4px 0 4px 30px;
+      }
+      .togivecolor {
+        color: #dee2e5;
+      }
+      #faqpart {
+        margin-top: 35px;
+      }
+      #faqpart > h2 {
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      /* from her i added */
+
+      /* .faq-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      } */
+      .hr-line {
+        width: 100%;
+        margin-top: 15px;
+        color: #dee2e5;
+        opacity: 50%;
+        margin-bottom: 10px;
+      }
+      /* Style the buttons that are used to open and close the faq-page body */
+      .faq-page {
+        /* background-color: #eee; */
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        margin: auto;
+        font-size: 18px;
+        line-height: 32px;
+        font-weight: 700;
+      }
+      .faq-body {
+        width: 100%;
+      }
+      .faq-page:hover {
+        background-color: #f9f9f9;
+      }
+
+      /* Style the faq-page panel. Note: hidden by default */
+      .faq-body {
+        background-color: white;
+        display: none;
+        overflow: hidden;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 24px;
+      }
+
+      .faq-page:after {
+        content: "\2B9F";
+        /* Unicode character for "plus" sign (+) */
+        font-size: 13px;
+        color: #777;
+        float: right;
+        margin-left: 5px;
+      }
+
+      .active:after {
+        content: "\2B9D";
+        /* Unicode character for "minus" sign (-) */
+      }
+      /* last part */
+      #container2 {
+        width: 45%;
+        margin: auto;
+        height: 450px;
+        margin-top: 30px;
+      }
+      #container2 > div > h1 {
+        font-size: 42px;
+        line-height: 42px;
+        text-align: center;
+        font-weight: 700;
+        font-family: "Noto Serif", sans-serif;
+        color: white;
+      }
+      #container2 > div > p {
+        text-align: center;
+        line-height: 30px;
+        color: white;
+      }
+      #lastbackground {
+        width: 100%;
+        background: #09112d;
+        border: 1px solid transparent;
+        margin-top: 290px;
+      }
+      #gridpart12 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(auto);
+        gap: 40px;
+        margin-top: 50px;
+      }
+      #gridpart12 > div {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: white;
+      }
+      #gridpart12 > div:hover {
+        cursor: pointer;
+        border: 2px solid blue;
+      }
+      #gridpart12 > div > h3 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-top: 35px;
+      }
+      #gridpart12 > div > p {
+        font-size: 14px;
+        line-height: 20px;
+        width: 83%;
+        margin: auto;
+        margin-top: 15px;
+      }
+      #gridpart12 > div > button {
+        width: 83%;
+        margin: auto;
+        margin-top: 20px;
+        background-color: #3967d6;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        color: white;
+        padding: 7px;
+        margin-bottom: 30px;
+      }
+      @media all and (min-width: 320px) and (max-width: 840px) {
+        #gridpart12 {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(auto);
+          }
+        
+       
+          #gridpart1 {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(auto);
+          }
+          #middlepartbackground {
+        margin-top: 80vh;
+        height: 90vh;
+          }
+          .containermiddle {
+           
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(auto);
+           
+          }
+          .flexgivng {
+           display: flex;
+           flex-wrap: wrap;
+          }
+          #faqpart {
+            width: 120%;
+            margin-left: -60px;
+          }
+          #lastbackground {
+          height: 150vh;
+          margin-top: 80vh;
+          }
+      }
