@@ -96,7 +96,7 @@
           type="tel"
           id="card"
           placeholder="Enter your card number"
-          maxlength="13"
+          minlength="13"
         />
         <label for="">Expiry date</label>
         <input type="date" name="" id="date" />
@@ -123,7 +123,7 @@
     let datee = document.querySelector("#date").value;
     let cvv = document.querySelector("#cvv").value;
 
-    if (cardNum == 1234 && datee == "2022-06-01" && cvv == 555) {
+    if (cardNum == 1234567891234 && datee == "2022-06-01" && cvv == 555) {
       alert("Please enter OTP");
       window.location.href = "OTP.html";
     } else {
