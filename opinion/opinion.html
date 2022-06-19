@@ -12,12 +12,12 @@
     <header id="container">
 
       <div id="language">
-          <a href="">ENGLISH</a>
-          <a href="">தமிழ்</a>
-          <a href="">বাংলা</a>
-          <a href="">മലയാളം</a>
-          <a href="">हिंदी</a>
-          <a href="">मराठी</a>
+        <a href="">ENGLISH</a>
+        <a href="https://tamil.indianexpress.com/">தமிழ்</a>
+          <a href="https://bengali.indianexpress.com/">বাংলা</a>
+          <a href="https://malayalam.indianexpress.com/">മലയാളം</a>
+          <a href="https://www.jansatta.com/">हिंदी</a>
+          <a href="https://www.loksatta.com/">मराठी</a> 
       </div>
 
       <div id="logo">
@@ -57,23 +57,23 @@
   </header>
 
   <div id="navbar">
-      <a class="navLogo" href="/Web-19-IndianExpress/navbar/hambarger.html">
-          <img src="/Web-19-IndianExpress/navbar/img/Screenshot 2022-06-14 214009.png" alt="">
+      <a class="navLogo" href="../navbar/hambarger.html">
+          <img src="../navbar/img/Screenshot 2022-06-14 214009.png" alt="">
       </a>
       <div id="names">
-          <a href="">Home</a>
-          <a href="/Web-19-IndianExpress/Explained/explained.html">Explained</a>
-          <a href="/Web-19-IndianExpress/Political/politic.html">Political Pulse</a>
-          <a href="/Web-19-IndianExpress/India/india.html">India</a>
-          <a href="/Web-19-IndianExpress/Cities/cities.html">Cities</a>
-          <a href="/Web-19-IndianExpress/opinion/opinion.html">Opinion</a>
-          <a href="">Entertainment</a>
-          <a href="/Web-19-IndianExpress/education/education.html">Education</a>
-          <a href="/Web-19-IndianExpress/premium/premium.html">Premium</a>
-          <a href="">Sports</a>
-          <a href="">Audio</a>
-          <a href="" id="subs">Subscribe</a>
-          <a href="/Web-19-IndianExpress/sign in/sign_in.html">Sign in</a>
+        <a href="../index.html">Home</a>
+        <a href="../Explained/explained.html">Explained</a>
+        <a href="../Political/politic.html">Political Pulse</a>
+        <a href="../India/india.html">India</a>
+        <a href="../Cities/cities.html">Cities</a>
+        <a href="../opinion/opinion.html">Opinion</a>
+        <a href="../Entertainment/Entertainment.html">Entertainment</a>
+        <a href="../education/education.html">Education</a>
+        <a href="../premium/premium.html">Premium</a>
+        <a href="../Sports/sports.html">Sports</a>
+        <a href="../premium/premium.html">Audio</a>
+        <a href="../Subscribe/subscribe.html" id="subs">Subscribe</a>
+        <a href="../sign in/sign_in.html">Sign in</a>
       </div>
       <div id="myOverlay" class="overlay">
         
@@ -86,7 +86,7 @@
           </div>
         </div>
       <a class="navLogo" class="openBtn" onclick="openSearch()" href="">
-          <img src="/Web-19-IndianExpress/navbar/img/Screenshot 2022-06-14 214114.png" alt="">
+          <img src="../navbar/img/Screenshot 2022-06-14 214114.png" alt="">
       </a>
 
 
@@ -494,3 +494,25 @@
 </body>
 </html>
 <script src="/Web-19-IndianExpress/premium/premium.js"></script>
+<script src="">
+   // search function
+   document.querySelector("#form").addEventListener("submit",searching);
+
+function searching(){
+    event.preventDefault();
+    let text=document.querySelector("#form>input").value
+    document.getElementById("myOverlay").style.display = "none";
+    let i="https://"
+    let link=`${i}indianexpress.com/?s=${text}`
+    console.log(link)
+    
+    
+         window.location.href=link        
+}
+
+// date
+let date=new Date();
+let bob=date.toString().split(" ")
+
+document.querySelector("#date").innerHTML=bob[0]+", "+bob[1]+" "+bob[2]+", "+bob[3]
+</script>
