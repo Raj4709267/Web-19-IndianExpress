@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+* {
+  box-sizing: border-box;
+}
+
+.openBtn {
+  background: #828282;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.openBtn:hover {
+  background: #bbb;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(88, 88, 88, 0.5);
+}
+
+.overlay-content {
+  position: relative;
+  top: 46%;
+  width: 30%;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: -50px;
+  left: 0px;
+
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 80%;
+  background: white;
+  border-radius: 5px 0px 0px 5px;
+  height: 55px;
+}
+
+.overlay input[type=text]:hover {
+  background: #f1f1f1;
+}
+
+.overlay button {
+  float: left;
+  width: 20%;
+  padding: 15px;
+  background: rgb(0, 0, 0);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0px 5px 5px 0px;
+  height: 55px;
+}
+/* #myOverlay{
+    display: none ;
+} */
+
+.overlay button:hover {
+  background: rgb(55, 55, 55);
+}
+.overlay-content button{
+    color: white;
+}
+</style>
+</head>
+
+<body>
+    <header id="container">
+
+        <div id="language">
+            <a href="">ENGLISH</a>
+            <a href="">தமிழ்</a>
+            <a href="">বাংলা</a>
+            <a href="">മലയാളം</a>
+            <a href="">हिंदी</a>
+            <a href="">मराठी</a>
+        </div>
+        </div>
+
+        <div id="logo">
+            <div>
+                Follow us:
+                <div>
+                    <a href="https://www.facebook.com/indianexpress" target="_blank"><img
+                            src="https://indianexpress.com/wp-content/themes/indianexpress/images/fb-followus.svg"
+                            alt=""></a>
+
+                    <a href="https://twitter.com/indianexpress" target="_blank"> <img
+                            src="https://indianexpress.com/wp-content/themes/indianexpress/images/twitter-followus.svg"
+                            alt=""></a>
+                </div>
+
+            </div>
+            <div>
+                <a href=""><img
+                        src="https://indianexpress.com/wp-content/themes/indianexpress/images/indian-express-logo-n.svg"
+                        alt=""></a>
+
+                <div style="font-family:Fira Sans, sans-serif; font-size: 14px; font-weight: bold;" id="date">
+                  
+                </div>
+
+            </div>
+            <div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </header>
+
+    <div id="navbar">
+        <a class="navLogo" href="hambarger.html">
+            <img src="./img/Screenshot 2022-06-14 214009.png" alt="">
+        </a>
+        <div id="names">
+            <a href="">Home</a>
+            <a href="">Explained</a>
+            <a href="">Political Pulse</a>
+            <a href="">India</a>
+            <a href="">Cities</a>
+            <a href="">Opinion</a>
+            <a href="">Entertainment</a>
+            <a href="">Education</a>
+            <a href="">Premium</a>
+            <a href="">Sports</a>
+            <a href="">Audio</a>
+            <a href="" id="subs">Subscribe</a>
+            <a href="">Sign in</a>
+        </div>
+        <div id="myOverlay" class="overlay">
+           
+            <div class="overlay-content">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">⊗</span>
+              <form id="form">
+                <input type="text" name="search">
+                <button type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        <a class="navLogo" class="openBtn" onclick="openSearch()" href="">
+            <img src="./img/Screenshot 2022-06-14 214114.png" alt="">
+        </a>
+
+
+    </div>
+
+   
+
+
+</body>
+
+</html>
+<script>
+
+  // search css
+    function openSearch() {
+        event.preventDefault()
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
+    }
+
+
+    // search function
+    document.querySelector("#form").addEventListener("submit",searching);
+
+    function searching(){
+        event.preventDefault();
+        let text=document.querySelector("#form>input").value
+        document.getElementById("myOverlay").style.display = "none";
+        let i="https://"
+        let link=`${i}indianexpress.com/?s=${text}`
+        console.log(link)
+        
+        
+             window.location.href=link        
+    }
+
+    // date
+    let date=new Date();
+    let bob=date.toString().split(" ")
+
+    document.querySelector("#date").innerHTML=bob[0]+", "+bob[1]+" "+bob[2]+", "+bob[3]
+    </script>
+
