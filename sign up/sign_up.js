@@ -15,6 +15,6 @@ function reg(event){
     }
     arr.push(obj);
     localStorage.setItem("users",JSON.stringify(arr));
-    location.replace("/Web-19-IndianExpress/sign in/sign_in.html")
+    location.replace("../sign in/sign_in.html")
   }
 }
